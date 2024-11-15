@@ -44,4 +44,18 @@ public class Player : MonoBehaviour
     {
         _rb.linearVelocity = new Vector2(speedMove, _rb.linearVelocity.y);
     }
+
+    public void GetHit()
+    {
+        Debug.Log("Bro get hit lol");
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Coin"))
+        {
+            ScoreboardControl.Instance.SetScore(1);
+            Destroy(other.gameObject);
+        }
+    }
 }
