@@ -53,7 +53,7 @@ public class PlantControl : MonoBehaviour
 
     public void Shoot()
     {
-        Debug.Log("Shoot some shit !!!");
+        Debug.Log("Shoot!!!");
         Instantiate(bullet, bulletPosition.position , Quaternion.identity);
     }
 }

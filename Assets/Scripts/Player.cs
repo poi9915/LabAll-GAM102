@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
 
     public void GetHit()
     {
-        Debug.Log("Bro get hit lol");
+        Debug.Log("Bro get hit");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
